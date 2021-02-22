@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    background-color: #f3f4f3;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    padding: 20px 0 20px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header div{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    flex: 30%;
+}
+nav{
+    flex: 70%;
+    margin-top: 60px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 10px 0 10px; 
+    font-size: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #0b56a4;
+}
+#home{
+    width: 100%;
+    margin: 15px 0 20px 0;
+}
+#home .slider{
+    width: 75%; 
+    margin: auto;
+    position: relative;
+    padding-top: 30px;
+}
+.slide{
+    height: 100%;
+    display: none;
+    margin: auto;
+    width: 100%;
+}
+.dots{
+    text-align: center;
+    margin: 5px 0 5px 0;
+}
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 2px;
+    display: inline-block;
+}
+.activeDot{
+   background-color: black;
+   
+}
+#about{
+    margin: auto;
+    padding: 30px 0 30px 0;
+    background-color: white;
+    border-bottom: 2px solid #0b56a4;
+    border-top: 2px solid #0b56a4;
+}
+#about p {
+    width: 65%;
+    margin: auto;
+    background-color: white;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+.about1{
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about1 div span{
+    color: #0b56a4;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+}
+.about1 div{
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    background-color: white;
+}
+.about2{
+    text-align: center;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 3s;
+}
+.about2 div{
+    width: 20%;
+    padding: 20px;
+    display: inline-block;
+    background-color: white;
+}
+i{
+    font-size: 110px;
+    text-align: center;
+    color: #0b56a4;
+    padding: 20px;
+    background-color: white;
+}
+hr{
+    width: 80%;
+    margin: auto;
+    border: 0.8px solid #0b56a4;
+}
+#contact{
+	text-align: center;
+    padding: 20px;
+    border-top: 2px solid #0b56a4;
+    background-color: white;
+}
+#contact > *{
+    padding: 20px;
+    background-color: white;
+}
+#contact form > *{
+    margin: 5px;
+}
+.formContact input[type="text"], .formContact input[type="email"], 
+.formContact textarea{
+    padding: 12px 5px 10px 5px;
+    margin-top: 10px;
+    width: 400px;
+    background-color: #f3f4f3;
+    border: 1px solid #0b56a4;
+    border-radius: 7px;
+}
+#ord form textarea{
+    padding: 12px 5px 10px 5px;
+    margin: 10px 0 0 20px;
+    width: 400px;
+    height: 120px;
+    background-color: white;
+    border: 1px solid #0b56a4;
+    border-radius: 7px;
+}
+#ord form select{
+    padding: 12px 5px 10px 5px;
+    margin-top: 10px;
+    width: 400px;
+    background-color: white;
+    border: 1px solid #0b56a4;
+    border-radius: 7px;
+}
+#ord form div{
+    margin: 15px 5px;
+    display: inline-block;
+}
+select option{
+    background-color: white;
+}
+.formContact button, #res form button{
+    border: none;
+    outline: none;
+    background-color: #0b56a4; 
+    color: white;
+    width: 400px;
+    border-radius: 7px;
+    padding: 10px;
+}
+#ord form button{
+    border: none;
+    outline: none;
+    background-color: #0b56a4; 
+    color: white;
+    width: 400px;
+    border-radius: 7px;
+    margin: 10px 0 0 20px;
+    padding: 10px;
+}
+#services{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    height: 700px;
+}
+.tab{
+    border: 1px solid #0b56a4;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0 0 0;
+}
+.left{
+    flex: 1;
+}
+.right{
+    flex: 1;
+}
+.tab button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 25px 0;
+}
+.tab button:hover{
+    background-color: #ddd;
+}
+.pizza{
+    padding: 8px 30px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+#ord span{
+    font-size: 30px;
+}
+.velicina{
+    margin-left: 15px;
+}
+.tabCon{
+    margin: 40px 0;
+    padding: 20px 0;
+}
+.dodaci{
+    margin: 10px;
+}
+.activeTab{
+    background-color: #ccc;
+}
+footer{
+    background-color: #f3f4f3;
+    color: black;
+    padding: 35px 0;
+    font-size: 20px;
+    text-align: center;
+    border-top: 2px solid #0b56a4;
+}
+footer nav{
+    margin: 15px 0 30px 0;
+}
+#res, #ord, #contact{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    //font-family: 'Courier New', Courier, monospace;
+}
+#res form input{
+	padding: 12px 5px 10px 5px;
+    margin-top: 10px;
+    width: 400px;
+    background-color: white;
+    border: 1px solid #0b56a4;
+    border-radius: 7px;
+}
+#toTop{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    overflow: hidden;
+    right: -50px;
+    bottom: 15px;
+    transition: right 1s;
+    position: fixed;
+    border-radius: 30%;
+    cursor: pointer;
+    border: 3px solid #0b56a4;
+    background-color: white;
+    text-align: center;
+}
+#toTop i:hover{
+    background-color: #0b56a4;
+    color: white;
+}
+#toTop:hover{
+    background-color: #0b56a4;
+}
+#toTop i{
+    font-size: 30px;
+    border-radius: 30%;
+    padding: 5px;
+}
+
+@media (max-width: 1000px){
+    header div{
+        flex-direction: column;
+    }
+    .logo{
+        text-align: center;
+    }
+    nav{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .about2{
+        padding: 20px 0;
+    }
+    .about2 div{
+        width: 40%;
+        padding: 0;
+    }
+    .about2 div div{
+        padding: 0;
+    }
+
+}
+@media (max-width: 750px){
+    header div{
+        flex-direction: column;
+        width: 100%;
+    }
+    nav{
+        text-align: center;
+        margin-top: 30px;
+    }
+    nav ul{
+        padding: 0;
+        
+    }
+    .logo{
+        text-align: center;
+    }
+    .about1 div{
+        display: block;
+    }
+    .about2 div{
+        width: 100%;
+    }
+    .slide{
+        height: 100%;
+    }
+    #res form input, #ord form select, 
+    #ord form textarea, #ord form button,
+    #contact form > *, #res form button{
+        width: 75%;
+    }
+    #ord form div{
+        margin: 0;
+    }
+}
+@media (max-width: 525px){
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+    }
+    #formAsd div div{
+        width: 100%;
+        text-align: center;
+    }
+    #ord form div{
+        margin: 0;
+
+    }
+}
